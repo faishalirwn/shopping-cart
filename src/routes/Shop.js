@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import ProductList from "../components/ProductList";
 
 function Shop(props) {
+  useEffect(() => {
+    document.title = "Shop";
+  });
   return (
     <div className="shop">
       <h1>Shop</h1>

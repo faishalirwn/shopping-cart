@@ -1,5 +1,10 @@
+import { useEffect } from "react";
+
 function Cart(props) {
   const { cart } = props;
+  useEffect(() => {
+    document.title = "Cart";
+  });
   return (
     <div className="cart">
       <h1>Cart</h1>

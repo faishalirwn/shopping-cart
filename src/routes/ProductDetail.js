@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 function ProductDetail(props) {
@@ -5,7 +6,9 @@ function ProductDetail(props) {
 
   const product = props.products.filter((product) => product.name === name)[0];
 
-  console.log(product);
+  useEffect(() => {
+    document.title = product.name;
+  });
 
   return (
     <div className="product-detail">
