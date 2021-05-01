@@ -9,6 +9,7 @@
 .product-detail img {
   border-radius: 10px;
   max-width: 500px;
+  margin: 0 auto;
   margin-right: 20px;
 }
 
@@ -62,4 +63,17 @@ input[type="number"] {
   background: none;
   border: none;
   outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .product-detail {
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: auto auto;
+  }
+
+  .product-detail img {
+    margin: 0 auto;
+  }
 }

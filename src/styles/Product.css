@@ -8,6 +8,12 @@
   border-radius: 5px;
 }
 
+@media screen and (max-width: 600px) {
+  .product img {
+    max-width: 150px;
+  }
+}
+
 .product-name {
   margin: 0 0 10px 0;
 }
