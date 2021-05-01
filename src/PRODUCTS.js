@@ -6,7 +6,6 @@ const PRODUCTS = [
       "https://i.scdn.co/image/ab67616d0000b273a017946e3afa6b0d4e7eb123",
     ],
     price: 50,
-    stock: 100,
   },
   {
     name: "Gira Dress",
@@ -15,7 +14,6 @@ const PRODUCTS = [
       "https://i.scdn.co/image/ab67616d0000b273a017946e3afa6b0d4e7eb123",
     ],
     price: 75,
-    stock: 100,
   },
   {
     name: "Gira Mask",
@@ -24,7 +22,6 @@ const PRODUCTS = [
       "https://i.scdn.co/image/ab67616d0000b273a017946e3afa6b0d4e7eb123",
     ],
     price: 25,
-    stock: 100,
   },
   {
     name: "Odo Boxing Glove",
@@ -33,7 +30,6 @@ const PRODUCTS = [
       "https://i.scdn.co/image/ab67616d0000b273a017946e3afa6b0d4e7eb123",
     ],
     price: 100,
-    stock: 100,
   },
   {
     name: "Readymade Bat",
@@ -42,7 +38,6 @@ const PRODUCTS = [
       "https://i.scdn.co/image/ab67616d0000b273a017946e3afa6b0d4e7eb123",
     ],
     price: 150,
-    stock: 100,
   },
   {
     name: "Readymade Cap",
@@ -51,7 +46,6 @@ const PRODUCTS = [
       "https://i.scdn.co/image/ab67616d0000b273a017946e3afa6b0d4e7eb123",
     ],
     price: 25,
-    stock: 100,
   },
 ];
 

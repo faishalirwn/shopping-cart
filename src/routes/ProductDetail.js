@@ -12,7 +12,6 @@ function ProductDetail(props) {
       <h1>Product Detail</h1>
       <p>{product.name}</p>
       <p>{product.price}</p>
-      <p>{product.stock}</p>
       <p>{product.img}</p>
       <button>Add to cart</button>
     </div>

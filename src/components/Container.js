@@ -8,7 +8,7 @@ function Container(props) {
         <Link to="/">Home</Link>
         <Link to="/shop">Shop</Link>
         <Link to="/cart">
-          <CartIndicator />
+          <CartIndicator quantity={1} />
         </Link>
       </nav>
       {props.children}

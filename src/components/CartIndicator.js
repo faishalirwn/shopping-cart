@@ -1,5 +1,5 @@
-function CartIndicator() {
-  return <div className="cart-indicator">CartImg(0)</div>;
+function CartIndicator(props) {
+  return <div className="cart-indicator">CartImg({props.quantity})</div>;
 }
 
 export default CartIndicator;
