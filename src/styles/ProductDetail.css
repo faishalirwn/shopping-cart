@@ -1,0 +1,35 @@
+.product-detail {
+  padding-top: 75px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.product-detail img {
+  border-radius: 10px;
+  max-width: 500px;
+  margin-right: 20px;
+}
+
+.product-detail h1 {
+  margin: 0 0 20px 0;
+}
+
+.product-detail-price {
+  font-size: 2em;
+  margin: 0 0 20px 0;
+  font-weight: bold;
+}
+
+.product-detail button {
+  cursor: pointer;
+  background-color: #fa2d48;
+  border-radius: 6px;
+  padding: 12px;
+  outline: none;
+  border: none;
+  color: inherit;
+  font-weight: bold;
+  width: 100%;
+}

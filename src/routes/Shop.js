@@ -1,3 +1,4 @@
+import "../styles/Shop.css";
 import { useEffect } from "react";
 import ProductList from "../components/ProductList";
 

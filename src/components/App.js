@@ -10,13 +10,18 @@ import products from "../PRODUCTS";
 import { useState } from "react";
 
 function App() {
-  const cart = [
+  const [cart, setCart] = useState([
+    {
+      id: 0,
+      ...products[0],
+      quantity: 2,
+    },
     {
       id: 1,
       ...products[1],
-      quantity: 2,
+      quantity: 1,
     },
-  ];
+  ]);
 
   return (
     <div className="App">
