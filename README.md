@@ -33,7 +33,7 @@ Other learning outcomes:
 
 ## More information
 
-- Made as a solution for the Shopping Cart Project in [The Odin Project](https://theodinproject.com/courses/javascript/lessons/shopping-chart)
+- Made as a solution for the Shopping Cart Project in [The Odin Project](https://theodinproject.com/courses/javascript/lessons/shopping-cart)
 
 - [Gituhb Pages Deployment](https://create-react-app.dev/docs/deployment/#github-pages)
 
