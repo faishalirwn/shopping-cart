@@ -10,39 +10,82 @@ import products from "../PRODUCTS";
 import { useState } from "react";
 
 function App() {
-  const [cart, setCart] = useState([
-    {
-      id: 0,
-      ...products[0],
-      quantity: 2,
-    },
-    {
-      id: 1,
-      ...products[1],
-      quantity: 1,
-    },
-  ]);
+  const [cart, setCart] = useState([]);
+
+  const handleCartAddition = (productId, quantity) => {
+    const productCartIndex = cart.findIndex((item) => item.id === productId);
+    if (productCartIndex === -1) {
+      if (quantity < 1) {
+        return;
+      }
+      const item = {
+        ...products[productId],
+        quantity,
+      };
+      setCart([...cart, item]);
+    } else {
+      const newCart = [...cart];
+      const product = newCart[productCartIndex];
+      if (product.quantity + quantity < 1) {
+        return;
+      }
+      product.quantity += quantity;
+      newCart.splice(productCartIndex, 1, product);
+      setCart(newCart);
+    }
+  };
+
+  const handleQuantityChange = (productCartIndex, quantity) => {
+    const newCart = [...cart];
+    if (quantity < 1) {
+      return;
+    }
+    const product = newCart[productCartIndex];
+    product.quantity = quantity;
+    newCart.splice(productCartIndex, 1, product);
+    setCart(newCart);
+  };
+
+  const handleCartDeletion = (productCartIndex) => {
+    const newCart = [...cart];
+    newCart.splice(productCartIndex, 1);
+    setCart(newCart);
+  };
+
+  const cartLength = cart.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue.quantity;
+  }, 0);
+
+  console.log(cartLength);
 
   return (
     <div className="App">
       <Switch>
         <Route path="/shop">
-          <Container>
+          <Container quantity={cartLength}>
             <Shop products={products} />
           </Container>
         </Route>
         <Route path="/product/:name">
-          <Container>
-            <ProductDetail products={products} />
+          <Container quantity={cartLength}>
+            <ProductDetail
+              products={products}
+              handleCartAddition={handleCartAddition}
+            />
           </Container>
         </Route>
         <Route path="/cart">
-          <Container>
-            <Cart cart={cart} />
+          <Container quantity={cartLength}>
+            <Cart
+              cart={cart}
+              handleCartAddition={handleCartAddition}
+              handleQuantityChange={handleQuantityChange}
+              handleCartDeletion={handleCartDeletion}
+            />
           </Container>
         </Route>
         <Route path="/">
-          <Container>
+          <Container quantity={cartLength}>
             <Home />
           </Container>
         </Route>

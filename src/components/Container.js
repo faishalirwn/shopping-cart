@@ -4,14 +4,14 @@ import CartIndicator from "./CartIndicator";
 
 function Container(props) {
   return (
-    <div class="container">
+    <div className="container">
       <header>
         <nav>
           <Link to="/">Ado Merch</Link>
-          <div class="nav-right">
+          <div className="nav-right">
             <Link to="/shop">Shop</Link>
             <Link to="/cart">
-              <CartIndicator quantity={1} />
+              <CartIndicator quantity={props.quantity} />
             </Link>
           </div>
         </nav>

@@ -40,14 +40,14 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.cart-item-quantity input {
+.cart-item input {
   background-color: rgba(235, 235, 245, 0.03);
   padding: 10px;
   color: inherit;
   border: none;
 }
 
-.cart-item-quantity button {
+.cart-item button {
   cursor: pointer;
   background: none;
   border: none;
