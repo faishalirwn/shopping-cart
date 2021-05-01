@@ -4,22 +4,32 @@ import Home from "../routes/Home";
 import Shop from "../routes/Shop";
 import ProductDetail from "../routes/ProductDetail";
 import Cart from "../routes/Cart";
+import Container from "./Container";
+import products from "../PRODUCTS";
 
 function App() {
   return (
     <div className="App">
       <Switch>
         <Route path="/shop">
-          <Shop />
+          <Container>
+            <Shop products={products} />
+          </Container>
         </Route>
-        <Route path="/productid">
-          <ProductDetail />
+        <Route path="/product/:name">
+          <Container>
+            <ProductDetail products={products} />
+          </Container>
         </Route>
         <Route path="/cart">
-          <Cart />
+          <Container>
+            <Cart />
+          </Container>
         </Route>
         <Route path="/">
-          <Home />
+          <Container>
+            <Home />
+          </Container>
         </Route>
       </Switch>
     </div>
