@@ -91,7 +91,9 @@ function Cart(props) {
       </div>
       <div className="cart-checkout">
         <p>Total: ${total}</p>
-        <button>Checkout</button>
+        <button onClick={() => alert("Thanks for checking out")}>
+          Checkout
+        </button>
       </div>
     </div>
   );

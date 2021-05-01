@@ -7,7 +7,7 @@ function Container(props) {
     <div className="container">
       <header>
         <nav>
-          <Link to="/">Ado Merch</Link>
+          <Link to="/">A D O</Link>
           <div className="nav-right">
             <Link to="/shop">Shop</Link>
             <Link to="/cart">
