@@ -31,6 +31,6 @@ Other learning outcomes:
 
 - Made as a solution for the Shopping Cart Project in [The Odin Project](https://theodinproject.com/courses/javascript/lessons/shopping-chart)
 
-- [GH-Pages Deployment](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f)
+- [Gituhb Pages Deployment](https://create-react-app.dev/docs/deployment/#github-pages)
 
 - README inspired by [pklepa](https://github.com/pklepa/shopping-cart)
